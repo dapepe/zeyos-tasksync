@@ -21,13 +21,13 @@
             "name": "assigneduser",
             "type": "string",
             "description": "The assigend user",
-            "optional": false
+            "optional": true
           },
           {
             "name": "index",
             "type": "int",
             "description": "The object ID",
-            "optional": false
+            "optional": true
           },
           {
             "name": "filter",
