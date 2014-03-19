@@ -1,0 +1,27 @@
+{
+  "author"      : "Peter Haider",
+  "name"        : "zeyos-tasksync",
+  "description" : "Export/import ZeyOS tasks as YAML for easy editing",
+  "version"     : "0.1.0",
+  "repository"  : {
+    "url": "https://github.com/dapepe/zeyos-tasksync"
+  },
+  "main": "./lib/zeyos-tasksync",
+  "keywords": [
+    "task",
+    "zeyos"
+  ],
+  "bin": {
+    "lingulog": "./bin/zeyos-tasksync"
+  },
+  "dependencies": {
+    "request"     : "~2.27.0",
+    "read"        : "~1.0.5",
+    "nopt"        : "~2.1.2",
+    "cli-table"   : "~0.2.0",
+    "prettyjson"  : "~0.10.0"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

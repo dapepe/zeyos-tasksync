@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "data": {
+    "tasks": [
+      {
+        "cmd": "import",
+        "method": "post",
+        "description": "Import tasks",
+        "param": [],
+        "return": {
+          "type": "array",
+          "description": "List of activites [{Id, Date, Entity, Index, Meta, Type}, ...]"
+        }
+      },
+      {
+        "cmd": "export",
+        "method": "get",
+        "description": "Export tasks",
+        "param": [
+          {
+            "name": "assigneduser",
+            "type": "string",
+            "description": "The assigend user",
+            "optional": false
+          },
+          {
+            "name": "index",
+            "type": "int",
+            "description": "The object ID",
+            "optional": false
+          },
+          {
+            "name": "filter",
+            "type": "array",
+            "description": "A filter array {search, orderby, orderasc}",
+            "optional": true
+          }
+        ],
+        "return": {
+          "type": "array",
+          "description": "List of activites [{Id, Date, Entity, Index, Meta, Type}, ...]"
+        }
+      }
+    ]
+  }
+}
