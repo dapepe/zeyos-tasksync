@@ -12,14 +12,16 @@
     "zeyos"
   ],
   "bin": {
-    "lingulog": "./bin/zeyos-tasksync"
+    "zeyos-tasksync": "./bin/zeyos-tasksync"
   },
   "dependencies": {
     "request"     : "~2.27.0",
     "read"        : "~1.0.5",
     "nopt"        : "~2.1.2",
-    "cli-table"   : "~0.2.0",
-    "prettyjson"  : "~0.10.0"
+    "cli-table"   : "~0.3.0",
+    "prettyjson"  : "~0.10.0",
+    "js-yaml"     : "~3.0",
+    "api-cli"     : "~0.1"
   },
   "engines": {
     "node": "*"

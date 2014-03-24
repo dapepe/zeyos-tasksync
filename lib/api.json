@@ -1,10 +1,12 @@
 {
-  "version": "1.0.0",
+  "version": "1000",
+  "url": null,
   "data": {
     "tasks": [
       {
         "cmd": "import",
         "method": "post",
+        "route": "/",
         "description": "Import tasks",
         "param": [],
         "return": {
@@ -15,30 +17,49 @@
       {
         "cmd": "export",
         "method": "get",
+        "route": "/",
         "description": "Export tasks",
         "param": [
           {
-            "name": "assigneduser",
+            "name": "user",
             "type": "string",
             "description": "The assigend user",
             "optional": true
           },
           {
-            "name": "index",
-            "type": "int",
-            "description": "The object ID",
+            "name": "priority",
+            "type": "string",
+            "description": "The task priority",
             "optional": true
           },
           {
-            "name": "filter",
-            "type": "array",
-            "description": "A filter array {search, orderby, orderasc}",
+            "name": "project",
+            "type": "string",
+            "description": "Project name",
+            "optional": true
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "The tag/category",
+            "optional": true
+          },
+          {
+            "name": "search",
+            "type": "string",
+            "description": "The search query",
+            "optional": true
+          },
+          {
+            "name": "orderby",
+            "type": "string",
+            "description": "Order by clause (duedate, tasknum, status, priority, progress, project, name)",
             "optional": true
           }
         ],
         "return": {
           "type": "array",
-          "description": "List of activites [{Id, Date, Entity, Index, Meta, Type}, ...]"
+          "description": "List of tasks [{ID, name, tasknum, duedate, priority, progress, projectedeffort, assigneduser, project, tags}, ...]"
         }
       }
     ]
